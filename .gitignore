@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+smartcharge.db
+dataset/ev_transactions/orders_2025-01_public.parquet
+dataset/ev_transactions/orders_2025-07_public.parquet
+ml/models/demand_rf_model.joblib

@@ -1,0 +1,55 @@
+{
+  "model_name": "SmartCharge-RF-Demand-v1.0",
+  "algorithm": "RandomForestRegressor",
+  "training_date": "2026-09-28 10:51:56",
+  "training_duration_seconds": 16.95,
+  "total_records_processed": 202074,
+  "train_samples": 161659,
+  "test_samples": 40415,
+  "features": [
+    "hour",
+    "day_of_week",
+    "is_weekend",
+    "day",
+    "station_total_power_kw",
+    "piles_num",
+    "charging_gun_num",
+    "dc_charging_gun_num",
+    "ac_charging_gun_num",
+    "station_hist_mean",
+    "station_hist_total",
+    "temperature",
+    "humidity",
+    "precipitation",
+    "traffic_level"
+  ],
+  "feature_importances": {
+    "station_hist_mean": 0.5942730382292746,
+    "hour": 0.1474980181946313,
+    "day": 0.08599226838304136,
+    "station_hist_total": 0.03077788216419142,
+    "temperature": 0.026403203363465477,
+    "traffic_level": 0.0224592159352992,
+    "humidity": 0.02162482650010123,
+    "station_total_power_kw": 0.018314441819990937,
+    "dc_charging_gun_num": 0.012898814695632222,
+    "piles_num": 0.012491948893065026,
+    "day_of_week": 0.010261366459416523,
+    "charging_gun_num": 0.009093151774746499,
+    "ac_charging_gun_num": 0.004457663709095449,
+    "is_weekend": 0.001743498647037061,
+    "precipitation": 0.0017106612310117716
+  },
+  "metrics": {
+    "mae": 0.8838,
+    "rmse": 1.5485,
+    "r2": 0.7726
+  },
+  "target": "hourly_transaction_count",
+  "demand_thresholds": {
+    "low_max": 2.0,
+    "medium_max": 6.0,
+    "high_min": 7.0
+  },
+  "status": "ready"
+}
